@@ -7902,7 +7902,6 @@ section {
 footer {
   /*pie de pagina*/
   display: flex;
-  height: 60px;
   background-image: linear-gradient(310deg, #7FC8A9, #D5EEBB, #5F7A61, #444941);
   justify-content: flex-end;
   align-items: center; }
@@ -7949,31 +7948,101 @@ article {
 /* ANCHO <776px */
 @media (max-width: 575.98px) {
   html {
-    background-color: #D5EEBB;
+    background-color: red;
     max-width: 560px; } }
 
 /* ANCHO >=776px */
 @media (min-width: 576px) and (max-width: 767.98px) {
   html {
     max-width: 760px;
-    background-color: #444941;
+    background-color: orange;
     background-image: linear-gradient(315deg, #D5EEBB 0%, #444941 74%);
     /*GRADIANTES*/ } }
 
 /* ANCHO >=768px */
 @media (min-width: 768px) and (max-width: 991.98px) {
   html {
-    max-width: 980px; } }
+    max-width: 980px;
+    height: 100%;
+    background-color: orchid; }
+  .menu {
+    /*PARA MENU DESPLEGABLE*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    color: #D5EEBB;
+    background-color: #5F7A61;
+    position: static;
+    overflow: hidden; } }
 
 /* ANCHO >=992px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   html {
-    max-width: 1180px; } }
+    max-width: 1180px;
+    background-color: greenyellow; }
+  #fotoGrande {
+    width: 70%; }
+  #columna, #parrafo {
+    height: 300px;
+    align-items: center;
+    overflow: hidden; }
+  #contenedor {
+    width: 30%; }
+  .nwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between; }
+  .menu {
+    /*PARA MENU DESPLEGABLE*/
+    display: flex;
+    overflow: hidden;
+    flex-direction: initial;
+    justify-content: Space-between;
+    width: 50%;
+    height: 50%; } }
 
 /* ANCHO >=1200px */
 @media (min-width: 1200px) {
   html {
-    background-color: #444941; } }
+    background-color: #444941; }
+  #fotoGrande {
+    width: 70%; }
+  #columna, #parrafo {
+    height: 300px;
+    align-items: center;
+    overflow: hidden; }
+  #contenedor {
+    width: 30%; }
+  .nwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between; }
+  .prueba {
+    display: flex;
+    flex-direction: initial;
+    justify-content: Space-between;
+    width: 100%;
+    height: 100%; }
+  .menu {
+    /*PARA MENU DESPLEGABLE*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    margin: 5px;
+    padding: 5px;
+    color: #D5EEBB;
+    background-color: #5F7A61;
+    position: static; } }
 
 /*CLASS*/
 /*Metodologia BEM*/
@@ -8060,7 +8129,9 @@ article {
 /*Metodologia BEM*/
 .a--textoMayuscula {
   /* tipo letra MAYUSCULA*/
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 80px;
+  align-items: center; }
 
 .letraChica {
   /*parrafo letra chica*/
@@ -8090,14 +8161,14 @@ article {
 .menu {
   /*PARA MENU DESPLEGABLE*/
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: 40vh;
   margin: 5px;
-  padding: 5px;
+  padding: -50%;
   color: #D5EEBB;
-  background-color: #5F7A61;
-  position: static; }
+  background-color: #5F7A61; }
 
 .listaSinOrden {
   /* lista sin orden*/
@@ -8115,7 +8186,8 @@ article {
   justify-content: center;
   position: static;
   font-size: 15px;
-  color: #D5EEBB; }
+  color: #D5EEBB;
+  padding: 20px; }
 
 /*Metodologia BEM*/
 .img--tamanoImagen2 {
@@ -8148,6 +8220,49 @@ article {
   background-image: linear-gradient(200deg, #D5EEBB 80%, #444941 100%);
   /*GRADIANTES*/
   align-items: center; }
+
+#fotoGrande {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; }
+
+#columna, #parrafo {
+  height: 300px;
+  align-items: center;
+  overflow: auto; }
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  overflow: auto; }
+
+#columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto; }
+
+.prueba {
+  display: flex; }
+
+.nwrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center; }
+
+.org {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
 
 /*modificador de BOOPSTRAP*/
 .carousel-inner img {
@@ -8190,3 +8305,8 @@ body {
 
 a {
   color: #D5EEBB; }
+
+fieldset {
+  padding: 10px;
+  margin: 0;
+  border: 10px; }

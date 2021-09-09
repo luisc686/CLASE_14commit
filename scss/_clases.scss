@@ -1,0 +1,222 @@
+/*CLASS*/
+/*Metodologia BEM*/
+.div--fondo1 { /*color fondo pagina1*/
+    background-color: $colordos;
+}
+
+.centrarImagen { /*Centrar imagen*/
+    display:block;
+    margin:auto;    
+}
+
+.fondoImagen { /*imagen de fondo*/
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-invierno-hojas-pinceles-color-pastel_220290-42.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-size:cover;    
+}
+
+/*Metodologia BEM*/
+.header__img--logo {    
+    height: 80px;
+    width: 80px;
+}
+
+/*Metodologia BEM*/
+.footer__img--tamano2 {    
+    height: 50px;
+    width: 50px;
+    margin:5px;
+    border: $colorblanco;
+}
+
+.tabla {  /*borde solido*/
+    border: 3px solid;
+    /*texto centrado*/
+    text-align: center;    
+}
+
+.filas {    /*tablas*/
+    color: transparent;
+    font-style: oblique;
+    font-size: x-large;
+    text-decoration: none;    
+}
+
+/*Metodologia BEM*/
+.footer__a--referencia {     /*para hiperviculos*/
+    color:$coloruno;     
+    font-style: oblique;
+    font-size: large;
+    text-decoration: none; 
+    margin: 10px;   
+}
+
+.colorRelleno {    /*color de relleno formularios*/
+     background-color: honeydew;
+  
+}
+
+/*Metodologia BEM*/        
+.p--textoJustificado {    /* alineacion del texto justificado*/
+    padding: 10px;
+    text-align:justify;    
+}
+
+/*EACH*/
+/*diferentes alineaciones de texto */
+@each $texto in Center, Right ,Justify,Center, End , Start{
+    .texto#{$texto} {
+    text-align:#{$texto};
+    }
+}
+       
+/*Metodologia BEM*/
+.a--textoMayuscula {  /* tipo letra MAYUSCULA*/
+    text-transform: uppercase;
+    font-size: 80px; 
+    align-items: center;
+}
+        
+.letraChica{    /*parrafo letra chica*/
+    font-size: xx-small;    
+}
+
+/*Metodologia BEM*/
+.li__a--letraGrande{     /*parrafo letra grande para menu principal*/
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    color: $colortres;
+    border: 1px;
+    padding: 10px;
+    margin: 10px;    
+}
+
+.display{ /*coloca una caja al lado de la otra*/
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    color: $colortres;    
+    position: static;
+}
+
+.menu{/*PARA MENU DESPLEGABLE*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    margin: 5px;
+    padding: -50%;
+    color:$colortres;
+    background-color:$colordos;
+}
+
+.listaSinOrden { /* lista sin orden*/
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+    font-size: 0; 
+    width: 100%;
+    text-align: justify;
+    /* truco por el uso de inline-block */    
+} 
+   
+.elementoDeLista { /* elementos de la lista*/ 
+    width: 23%;
+    justify-content: center;
+    position: static; 
+    font-size: 15px; 
+    color: $colortres;
+    padding: 20px;      
+} 
+
+/*Metodologia BEM*/
+.img--tamanoImagen2{
+    width: 300px;
+    height:130px;
+}
+
+/*Metodologia BEM*/
+.input--bordeDefinido{
+    padding: 20px;
+    border:red solid;
+    margin: 20px;
+}
+
+/*GRADIANTES*/
+
+.claros{
+    padding: 10px;
+    display:flex;
+    flex-flow: wrap;
+    align-content: center;
+    align-items: stretch;    
+}
+
+/* TRANSICIONES*/
+
+/*Metodologia BEM*/
+.li--agrandarTitulo{
+    border-radius: 1em;
+    transition: all 1s;
+}
+
+.li--agrandarTitulo:hover{
+    display:flex;
+    height: 40px;    
+    background-image: linear-gradient(200deg, $colortres 80%, $coloruno 100%);/*GRADIANTES*/
+    align-items: center;
+}
+
+#fotoGrande{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;   
+}
+
+#columna, #parrafo{
+    height:300px;
+    align-items: center;
+    overflow: auto;    
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#columna{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    overflow: auto;
+}
+
+.prueba{ display: flex;
+}
+
+.nwrap{ 
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.org{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center; 
+    align-items: center;
+    width:100%;
+    height:100%;
+}

@@ -16,41 +16,54 @@
         <!--SECCION 1-->            
         <!--Datos para contactarse-->
         <hr>
-            <p>Ingrese sus datos a la brevedad estaremos respondiendo!!!</p>
-<!--SECCION 2-->
-            <form>
-                <fieldset>
-                    <legend>DATOS</legend>
-                    <label for="NombreyApellido">Nombre y Apellido:</label>
-                        <input class="colorrelleno" type="text" name="NombreyApellido" placeholder="Ingrese nombre y apellido"> <br>
-                    <label for="Correo">Email:</label>
-                        <input class="colorrelleno" type="email" name="Correo" placeholder="nombre@ejemplo.com"><br>
-                    <label for="Comentarios">Ingrese Comentarios:</label><br>
-                        <textarea class="colorrelleno" name="Comentario" id="5" cols="30" rows="10"></textarea><br>
-                    <legend class="claros">
-                    <label for="sexo"> SEXO :</label> 
-                        <div>Hombre</div>
-                            <input class="input--bordeDefinido" type="radio" name="sexo" value="Hombre">
-                        <div>Mujer</div>
-                            <input class="input--bordeDefinido" type="radio" name="sexo" value="Mujer">
-                    </legend>
-<!--SECCION 3-->
-                    <form>
-                        <div>Acepta terminos y condiciones </div>
-                        <input type="checkbox" name="acepta" value="1">
+        <p>Ingrese sus datos a la brevedad estaremos respondiendo!!!</p>
+            <!--SECCION 2-->
+        <div class= "prueba">
+            <div class="col-md-6" >
+                    <form> 
+                        <fieldset class="org" >
+                            <legend>DATOS</legend>
+                            <label for="NombreyApellido">Nombre y Apellido:</label>
+                                <input class=" form-control colorrelleno" type="text" name="NombreyApellido" placeholder="Ingrese nombre y apellido">
+                            <label for="Correo">Email:</label>
+                                <input class="form-control colorrelleno" type="email" name="Correo" placeholder="nombre@ejemplo.com"><br>
+                            <label for="Comentarios">Ingrese Comentarios:</label><br>
+                                <textarea class="form-control colorrelleno" name="Comentario" id="5" cols="30" rows="10"></textarea><br>
+                            <legend class="claros">
+                                <label for="sexo"> SEXO  :</label>                            
+                                <div>Hombre</div>
+                                    <input class="input--bordeDefinido" type="radio" name="sexo" value="Hombre">
+                                <div>Mujer</div>
+                                    <input class="input--bordeDefinido" type="radio" name="sexo" value="Mujer">
+                            </legend>
+                            <!--SECCION 3-->
+                            <form>
+                                <div>
+                                <input type="checkbox" name="acepta" value="1">
+                                Acepta terminos y condiciones 
+                                </div>
+                            </form>
+                                <input type="submit" value="Enviar Formulario">
+                                <input type="reset" value="Limpiar Formulario">
+                        </fieldset>
+                    
                     </form>
-                        <input type="submit" value="Enviar Formulario">
-                        <input type="reset" value="Limpiar Formulario">
-                </fieldset>
-            </form>
+            </div>
+            <div class="col-md-6">
+                <h2>¿Donde nos ubicamos?</h2>
+                <p>Si estás en CABA te lo podemos enviar en el día. También podés retirar de Lunes a Sábados de 09 a 20hs. Si sos del interior, realizamos envíos súper express a todo el país garantizados.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.383107887819!2d-58.44952168477354!3d-34.56917156317798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM0JzA5LjAiUyA1OMKwMjYnNTAuNCJX!5e0!3m2!1ses-419!2sar!4v1631112407095!5m2!1ses-419!2sar" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>        
+        </div>
         <hr>
     </div>
     <hr>
-    <br>
+    <br>    
     <!--musica de fondo de la pagina-->
     <audio autoplay controls src="../assets/musicafondo.mp3"></audio>
 <!--SECCION 4-->
     <footer>
+        <P class="opacity-25">COPYRIGHT @ 2021 - derechos reservados</P> <!-- Utilizando BOOTSTRAP -->
         <a href="../index.html" class="footer__a--referencia" >Pagina Principal</a> 
     </footer>  
 </body>
