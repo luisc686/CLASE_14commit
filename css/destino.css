@@ -7955,7 +7955,7 @@ article {
 @media (min-width: 576px) and (max-width: 767.98px) {
   html {
     max-width: 760px;
-    background-color: orange;
+    background-color: #444941;
     background-image: linear-gradient(315deg, #D5EEBB 0%, #444941 74%);
     /*GRADIANTES*/ } }
 
@@ -7964,7 +7964,7 @@ article {
   html {
     max-width: 980px;
     height: 100%;
-    background-color: orchid; }
+    background-color: #444941; }
   .menu {
     /*PARA MENU DESPLEGABLE*/
     display: flex;
@@ -7983,7 +7983,7 @@ article {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   html {
     max-width: 1180px;
-    background-color: greenyellow; }
+    background-color: #444941; }
   #fotoGrande {
     width: 70%; }
   #columna, #parrafo {
