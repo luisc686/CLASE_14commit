@@ -25,7 +25,6 @@
         @include transition($carousel-transition);
 }
 
-
 .carousel-caption {
             position:static;
             right: 15%;
@@ -44,9 +43,9 @@ body{
 a{
   color:$colortres;
 }
+
 fieldset { 
   padding: 10px;
   margin: 0;
   border: 10px; 
-
 }

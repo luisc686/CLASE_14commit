@@ -7820,7 +7820,9 @@ html {
   font-family: sans-serif;
   /*color fondo pagina*/
   background-color: #7FC8A9;
-  height: auto; }
+  height: auto;
+  margin-left: 5px;
+  margin-left: 5px; }
 
 div {
   display: flex;
@@ -7948,7 +7950,6 @@ article {
 /* ANCHO <776px */
 @media (max-width: 575.98px) {
   html {
-    background-color: red;
     max-width: 560px; } }
 
 /* ANCHO >=776px */
@@ -8042,7 +8043,13 @@ article {
     padding: 5px;
     color: #D5EEBB;
     background-color: #5F7A61;
-    position: static; } }
+    position: static; }
+  .nwrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center; } }
 
 /*CLASS*/
 /*Metodologia BEM*/
@@ -8161,10 +8168,10 @@ article {
 .menu {
   /*PARA MENU DESPLEGABLE*/
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 40vh;
+  height: 100%;
   margin: 5px;
   padding: -50%;
   color: #D5EEBB;
@@ -8247,12 +8254,8 @@ article {
 .prueba {
   display: flex; }
 
-.nwrap {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center; }
+.nwrap-color {
+  background-color: #5F7A61; }
 
 .org {
   display: flex;
